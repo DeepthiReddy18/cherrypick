@@ -18,6 +18,8 @@
             $this -> db = new Database;
         }
 
+
+        //master branch make some changes or create a commit and then using cherry pick merge the both commits 
         public function getzones() {
             $this -> db -> query('SELECT DISTINCT(zn_nm), zn_id  FROM '.$this->brschema.' WHERE 1=1 AND zn_nm is not null ORDER BY zn_nm ASC');
             $rows = $this -> db -> resultSet();
