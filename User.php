@@ -1,5 +1,7 @@
 <?php
 
+//user page make some changes and merge only commit in child branch and parent branch without using merge
+
     class User {
         private $db;
         private $uschema = DB_UTABLE;
